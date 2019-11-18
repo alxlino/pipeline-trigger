@@ -54,7 +54,7 @@ def parse_args(args: List[str]):
         '-a', '--api-token', help='personal access token (not required when running detached)')
     parser.add_argument('-d', '--detached', action='store_true', default=False)
     parser.add_argument('-e', '--env', action='append')
-    parser.add_argument('-h', '--host', default='gitlab.com')
+    parser.add_argument('-h', '--host', default='gitlab')
     parser.add_argument(
         '--help', action='help', help='show this help message and exit')
     parser.add_argument('-o', '--output', action='store_true', default=False, help='Show triggered pipline job output upon completion')
