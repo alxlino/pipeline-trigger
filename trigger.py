@@ -185,10 +185,10 @@ def trigger(args: List[str]) -> int:
     ref = args.target_ref
     proj_id = args.project_id
     pipeline_token = args.pipeline_token
-    if args.host.startswith('http://') or args.host.startswith('https://'):
+    if args.host.startswith('http://') or args.host.startswith('http://'):
         base_url = args.host
     else:
-        base_url = f'https://{args.host}'
+        base_url = f'http://{args.host}'
     project_url = f"{base_url}{args.url_path}/{proj_id}"
     verifyssl = args.verifyssl
     variables = {}
